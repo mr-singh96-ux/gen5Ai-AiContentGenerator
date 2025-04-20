@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+KiratGPT.ai – SaaS-Based Project
+KiratGPT.ai is a SaaS-based AI-powered project designed specifically for SaaS businesses to create high-quality, SEO-friendly blog content in seconds. Built during my internship, this project combines cutting-edge technology with a seamless user experience to simplify content creation for startups and digital businesses.
 
-## Getting Started
+🛠️ Tech Stack
+Next.js – Framework for fast and scalable web apps
 
-First, run the development server:
+React – Component-based UI development
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tailwind CSS – Utility-first CSS framework for responsive design
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+TypeScript – Enhances code quality with static typing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Gemini AI – Generates intelligent, contextual blog content
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Clerk – Plug-and-play authentication and user management
 
-## Learn More
+✨ Key Features
+🤖 AI-Powered Content Generation
+Instantly generate blog articles with relevant and unique content using Gemini.
 
-To learn more about Next.js, take a look at the following resources:
+🔐 User Authentication
+Secure sign-in and user session management powered by Clerk.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+⚡ SaaS-Optimized Performance
+Built with Next.js for server-side rendering, speed, and SEO optimization.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+🌐 Responsive UI Design
+Clean, modern, and mobile-friendly interface built with Tailwind CSS.
 
-## Deploy on Vercel
+📚 What I Learned
+Creating KiratGPT.ai gave me real-world experience in building a full SaaS product from the ground up. I learned how to integrate AI, authentication, modern frontend tools, and best practices to deliver a user-centric solution.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+👨‍💻 Collaborator
+Harsh Kataria - 2410990329
+Harshdeep Singh - 2410990330
+Ishwardeep Singh - 2410990365
+Kiratbir Singh – 2410990383
+Eklavya Gautam- 2410990224
