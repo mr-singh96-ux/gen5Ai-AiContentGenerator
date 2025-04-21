@@ -25,20 +25,17 @@ jobs:
           cache: 'npm'
 
       - name: 📦 Install Dependencies
-        run: npm install -f
+        run: npm install --legacy-peer-deps
 
-      # Install ESLint as a devDependency
-      - name: Install ESLint
-        run: npm install --save-dev eslint --legacy-peer-deps
-
-      # Install eslint-config-next for "next/core-web-vitals"
-      - name: Install ESLint Config for Next.js
-        run: npm install eslint-config-next --save-dev
+      # Install ESLint and eslint-config-next with --legacy-peer-deps
+      - name: Install ESLint and Next.js Config
+        run: |
+          npm install eslint eslint-config-next --save-dev --legacy-peer-deps
 
       # Downgrade React to version 17.x
-      - name: Downgrade React
+      - name: Downgrade React to 17.x
         run: |
-          npm install react@17.0.2 react-dom@17.0.2 --save
+          npm install react@17.0.2 react-dom@17.0.2 --legacy-peer-deps --save
 
       # Create the ESLint config file .eslintrc.js
       - name: 🧹 Create ESLint Configuration File
