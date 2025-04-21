@@ -27,35 +27,6 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install -f
 
-      - name: 🧹 Create ESLint Configuration (if not present)
-        run: |
-          if [ ! -f .eslintrc.js ]; then
-            echo "Creating ESLint configuration..."
-            cat <<EOL > .eslintrc.js
-module.exports = {
-  extends: [
-    'next/core-web-vitals',
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
-  plugins: ['react', '@typescript-eslint'],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  rules: {
-    '@typescript-eslint/no-unused-vars': ['warn'],
-    'react/react-in-jsx-scope': 'off',
-  },
-};
-EOL
-          fi
-
       - name: 🧹 Run Linter
         run: npm run lint
 
@@ -63,7 +34,4 @@ EOL
         run: npm run build
 
       - name: ✅ Run Tests (Optional)
-        run: echo "No tests configured"  # Replace with: npm test if you have tests
-
-  # Optional: deploy job (if you’re deploying to Vercel or another platform)
-  # If deploying through Vercel Git integration
+        run: echo "No tests configured"
