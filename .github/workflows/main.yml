@@ -27,6 +27,31 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install -f
 
+      # Create the ESLint config file .eslintrc.js
+      - name: 🧹 Create ESLint Configuration File
+        run: |
+          echo "module.exports = {" > .eslintrc.js
+          echo "  extends: [" >> .eslintrc.js
+          echo "    'next/core-web-vitals'," >> .eslintrc.js
+          echo "    'eslint:recommended'," >> .eslintrc.js
+          echo "    'plugin:react/recommended'," >> .eslintrc.js
+          echo "    'plugin:@typescript-eslint/recommended'," >> .eslintrc.js
+          echo "  ]," >> .eslintrc.js
+          echo "  plugins: ['react', '@typescript-eslint'], " >> .eslintrc.js
+          echo "  parser: '@typescript-eslint/parser'," >> .eslintrc.js
+          echo "  parserOptions: {" >> .eslintrc.js
+          echo "    ecmaVersion: 2020," >> .eslintrc.js
+          echo "    sourceType: 'module'," >> .eslintrc.js
+          echo "    ecmaFeatures: {" >> .eslintrc.js
+          echo "      jsx: true," >> .eslintrc.js
+          echo "    }" >> .eslintrc.js
+          echo "  }," >> .eslintrc.js
+          echo "  rules: {" >> .eslintrc.js
+          echo "    '@typescript-eslint/no-unused-vars': ['warn']," >> .eslintrc.js
+          echo "    'react/react-in-jsx-scope': 'off'," >> .eslintrc.js
+          echo "  }" >> .eslintrc.js
+          echo "};" >> .eslintrc.js
+
       - name: 🧹 Run Linter
         run: npm run lint
 
@@ -34,4 +59,4 @@ jobs:
         run: npm run build
 
       - name: ✅ Run Tests (Optional)
-        run: echo "No tests configured"
+        run: echo "No tests configured"  # Replace with: npm test if you have tests
