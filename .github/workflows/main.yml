@@ -27,6 +27,10 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install -f
 
+      # Install ESLint as devDependency
+      - name: Install ESLint
+        run: npm install --save-dev eslint
+
       # Create the ESLint config file .eslintrc.js
       - name: 🧹 Create ESLint Configuration File
         run: |
