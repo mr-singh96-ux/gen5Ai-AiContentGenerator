@@ -31,6 +31,10 @@ jobs:
       - name: Install ESLint
         run: npm install --save-dev eslint --legacy-peer-deps
 
+      # Install eslint-config-next for "next/core-web-vitals"
+      - name: Install ESLint Config for Next.js
+        run: npm install eslint-config-next --save-dev
+
       # Downgrade React to version 17.x
       - name: Downgrade React
         run: |
