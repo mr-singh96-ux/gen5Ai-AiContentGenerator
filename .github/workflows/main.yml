@@ -5,14 +5,14 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]  # Compatible with Next.js
+        node-version: [18.x] # Compatible with Next.js
 
     steps:
       - name: 📥 Checkout Repository
@@ -25,11 +25,16 @@ jobs:
           cache: 'npm'
 
       - name: 📦 Install Dependencies
-        run: npm install -f
+        run: npm install
 
-      # Install ESLint as devDependency
+      # Install ESLint as a devDependency
       - name: Install ESLint
-        run: npm install --save-dev eslint
+        run: npm install --save-dev eslint --legacy-peer-deps
+
+      # Downgrade React to version 17.x
+      - name: Downgrade React
+        run: |
+          npm install react@17.0.2 react-dom@17.0.2 --save
 
       # Create the ESLint config file .eslintrc.js
       - name: 🧹 Create ESLint Configuration File
@@ -63,4 +68,4 @@ jobs:
         run: npm run build
 
       - name: ✅ Run Tests (Optional)
-        run: echo "No tests configured"  # Replace with: npm test if you have tests
+        run: echo "No tests configured" # Replace with: npm test if you have tests
