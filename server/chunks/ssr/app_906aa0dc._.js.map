@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":["file://D%3A/WeIntern%20Work/AI%20Generator/ai-generator-kbs/app/dashboard/setting/page.tsx"],"sourcesContent":["import { UserProfile } from '@clerk/nextjs';\r\nimport React from 'react';\r\n\r\nfunction Page() {\r\n  return (\r\n    \r\n    <div className=\"flex justify-center items-center h-screen\">\r\n      <UserProfile routing=\"hash\" />\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default Page;\r\n"],"names":[],"mappings":";;;;AAAA;;;AAGA,SAAS;IACP,qBAEE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,sLAAA,CAAA,cAAW;YAAC,SAAQ;;;;;;;;;;;AAG3B;uCAEe","debugId":null}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
