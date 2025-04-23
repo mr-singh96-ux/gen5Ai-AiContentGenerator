@@ -31,8 +31,8 @@ Clean, modern, and mobile-friendly interface built with Tailwind CSS.
 Creating KiratGPT.ai gave me real-world experience in building a full SaaS product from the ground up. I learned how to integrate AI, authentication, modern frontend tools, and best practices to deliver a user-centric solution.
 
 👨‍💻 Collaborator
-Harsh Kataria - 2410990329
-Harshdeep Singh - 2410990330
-Ishwardeep Singh - 2410990365
-Kiratbir Singh – 2410990383
-Eklavya Gautam- 2410990224
+Harsh Kataria: 2410990329
+Harshdeep Singh: 2410990330
+Ishwardeep Singh: 2410990365
+Kiratbir Singh: 2410990383
+Eklavya Gautam: 2410990224
