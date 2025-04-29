@@ -10,7 +10,7 @@ type TotalUsageContextType = {
 // Create the context with a default value
 export const TotalUsageContext = createContext<TotalUsageContextType>({
   totalUsage: 0, 
-  setTotalUsage: () => {},  // Default empty function for setTotalUsage
+  setTotalUsage: () => {},   // Default empty function for setTotalUsage
 });
 
 export const TotalUsageProvider = ({ children }: { children: ReactNode }) => {
