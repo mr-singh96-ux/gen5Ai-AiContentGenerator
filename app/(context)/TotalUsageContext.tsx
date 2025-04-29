@@ -1,7 +1,7 @@
 // TotalUsageContext.ts
-import { createContext, useState, ReactNode } from "react";
+import { createContext, useState, ReactNode} from "react";
 
-// Define the type for the context state
+// Define type for the  context state
 type TotalUsageContextType = {
   totalUsage: number;
   setTotalUsage: (usage: number) => void;
